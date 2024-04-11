@@ -14,4 +14,6 @@ public class exercicio1 {
             System.out.printf("È menor que 0 e o numero foi %.1f",numero);
         }
     }
+
+
 }
