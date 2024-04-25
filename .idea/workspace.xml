@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ba78645-45fa-4561-bd3e-7034b5d45d59" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/aula--5/aula--5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula-5b/aula-5b.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula-5b/src/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,10 +45,11 @@
     "Java Scratch.exercicio01.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/java/senaijava_aula_2024_2/aula-2",
+    "last_opened_file_path": "C:/alex/senaijava_aula_2024_2/aula-5b",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,6 +67,13 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,6 +84,9 @@
       <updated>1712855987951</updated>
       <workItem from="1713460985900" duration="307000" />
       <workItem from="1713468424338" duration="1729000" />
+      <workItem from="1714065098675" duration="135000" />
+      <workItem from="1714065277242" duration="1201000" />
+      <workItem from="1714069414806" duration="633000" />
     </task>
     <servers />
   </component>
