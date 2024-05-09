@@ -1,11 +1,11 @@
 public class crudPadaria {
     private String nome;
-    private float altura;
+    private float valor;
     private float peso;
 
-    public crudPadaria(String nome, float altura, float peso ){
+    public crudPadaria(String nome, float valor, float peso ){
         this.nome= nome;
-        this.altura=altura;
+        this.valor=valor;
         this.peso=peso;
     }
 
@@ -17,12 +17,12 @@ public class crudPadaria {
         this.nome = nome;
     }
 
-    public float getAltura() {
-        return altura;
+    public float getValor() {
+        return valor;
     }
 
-    public void setAltura(float altura) {
-        this.altura = altura;
+    public void setValor(float altura) {
+        this.valor = altura;
     }
 
     public float getPeso() {
@@ -32,4 +32,5 @@ public class crudPadaria {
     public void setPeso(float peso) {
         this.peso = peso;
     }
+
 }

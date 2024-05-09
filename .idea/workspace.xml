@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ba78645-45fa-4561-bd3e-7034b5d45d59" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/aula--5/aula--5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula-5b/aula-5b.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aula-5b/src/Conta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula-7/aula-7.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula-6/src/TelaPincipal.form" beforeDir="false" afterPath="$PROJECT_DIR$/aula-6/src/TelaPincipal.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula-6/src/TelaPincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/aula-6/src/TelaPincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula-6/src/crudPadaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/aula-6/src/crudPadaria.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/alex/senaijava_aula_2024_2/aula-5b",
+    "last_opened_file_path": "C:/Alex/java/senaijava_aula_2024_2/aula-6",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,13 +68,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,5 +87,20 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/aula-5b/src/Conta.java</url>
+          <line>38</line>
+          <properties class="Conta" method="depositar">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
