@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ba78645-45fa-4561-bd3e-7034b5d45d59" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/aula-8/aula-8.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula-8/aula-8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/aula-8/aula-8.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +54,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Alex\java\senaijava_aula_2024_2\aula-8\src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="exercicio01" type="Java Scratch">
       <module name="senaijava_aula_2024_2" />
