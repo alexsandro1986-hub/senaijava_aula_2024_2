@@ -20,11 +20,13 @@ public class Main {
         pessoas.add(professor);
         professor = new Professor("Jack", pessoas.size() + 1, "1234", "IOT");
         pessoas.add(professor);
+        professor.fazerChamada();
+
 
         //Funcionario
         Funcionario funcionario = new Funcionario("Goku", 1, "123", "Manutenção");
         pessoas.add(funcionario);
-        System.out.println(funcionario.getNome());
+        //System.out.println(funcionario.getNome());
 
 
 
@@ -39,11 +41,12 @@ public class Main {
 
             if (p instanceof Funcionario) {
                 Funcionario f = (Funcionario) p;
-                System.out.println(f.getCurso());
+                System.out.println(f.getCetor());
             } else if (p.getClass() == Professor.class) {
                 Professor profe = (Professor) p;
                 System.out.println(profe.getArea());
             }
+
 
 
             //Aluno
@@ -60,4 +63,6 @@ public class Main {
         }
 
     }
+
+
 }
