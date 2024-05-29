@@ -39,7 +39,7 @@ public class Main {
 
             if (p instanceof Funcionario) {
                 Funcionario f = (Funcionario) p;
-                System.out.println(f.getCurso());
+                System.out.println(f.getCetor());
             } else if (p.getClass() == Professor.class) {
                 Professor profe = (Professor) p;
                 System.out.println(profe.getArea());
