@@ -6,7 +6,7 @@ public class Professor extends Pessoa{
         this.area = area;
     }
 
-    public void fazerChamada(String area){
+    public void fazerChamada(){
         System.out.println("Zuma");
         System.out.println("Andrey");
         System.out.println("....");

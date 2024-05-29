@@ -20,11 +20,13 @@ public class Main {
         pessoas.add(professor);
         professor = new Professor("Jack", pessoas.size() + 1, "1234", "IOT");
         pessoas.add(professor);
+        professor.fazerChamada();
+
 
         //Funcionario
         Funcionario funcionario = new Funcionario("Goku", 1, "123", "Manutenção");
         pessoas.add(funcionario);
-        System.out.println(funcionario.getNome());
+        //System.out.println(funcionario.getNome());
 
 
 
@@ -46,6 +48,7 @@ public class Main {
             }
 
 
+
             //Aluno
            /* if (p instanceof Aluno) {
                 Aluno a = (Aluno) p;
@@ -60,4 +63,6 @@ public class Main {
         }
 
     }
+
+
 }
