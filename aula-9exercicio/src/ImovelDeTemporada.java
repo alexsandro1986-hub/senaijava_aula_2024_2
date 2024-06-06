@@ -1,8 +1,8 @@
 public class ImovelDeTemporada extends Imovel{
     private String temporada;
 
-    public ImovelDeTemporada(String nome, int id, float tamanhoF, String temporada) {
-        super(nome, id, tamanhoF);
+    public ImovelDeTemporada(float area, String tipo, String padrao, int numeroQuartos, int id, String endereco, String temporada) {
+        super(area, tipo, padrao, numeroQuartos, id, endereco);
         this.temporada = temporada;
     }
 

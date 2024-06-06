@@ -1,16 +1,16 @@
 public class ImovelDeVenda extends Imovel{
-    private String venda;
+    private float preco;
 
-    public ImovelDeVenda(String nome, int id, float tamanhoF, String venda) {
-        super(nome, id, tamanhoF);
-        this.venda = venda;
+    public ImovelDeVenda(float area, String tipo, String padrao, int numeroQuartos, int id, String endereco, float preco) {
+        super(area, tipo, padrao, numeroQuartos, id, endereco);
+        this.preco = preco;
     }
 
-    public String getVenda() {
-        return venda;
+    public float getPreco() {
+        return preco;
     }
 
-    public void setVenda(String venda) {
-        this.venda = venda;
+    public void setPreco(float preco) {
+        this.preco = preco;
     }
 }

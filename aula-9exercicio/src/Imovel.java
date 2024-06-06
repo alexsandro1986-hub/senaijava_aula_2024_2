@@ -1,17 +1,35 @@
 public class Imovel {
 
-    private String nome;
+    private String endereco;
+    private float area;
+    private int numeroQuartos;
     private int id;
-    private float tamanhoF;
+    private String tipo;
+    private String padrao;
 
-    public Imovel(String nome, int id, float tamanhoF){
-        this.nome = nome;
+    public Imovel(float area, String tipo, String padrao, int numeroQuartos, int id, String endereco) {
+        this.area = area;
+        this.tipo = tipo;
+        this.padrao = padrao;
+        this.numeroQuartos = numeroQuartos;
         this.id = id;
-        this.tamanhoF = tamanhoF;
+        this.endereco = endereco;
     }
 
-    public Imovel (){
+    public float getArea() {
+        return area;
+    }
 
+    public void setArea(float area) {
+        this.area = area;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
     public int getId() {
@@ -22,19 +40,27 @@ public class Imovel {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public int getNumeroQuartos() {
+        return numeroQuartos;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNumeroQuartos(int numeroQuartos) {
+        this.numeroQuartos = numeroQuartos;
     }
 
-    public float getTamanhoF() {
-        return tamanhoF;
+    public String getPadrao() {
+        return padrao;
     }
 
-    public void setTamanhoF(float tamanhoF) {
-        this.tamanhoF = tamanhoF;
+    public void setPadrao(String padrao) {
+        this.padrao = padrao;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }

@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 
 public class Main {
+
+   public static boolean testarClasseExata(Object o, Class<?> classe){
+       return o.getClass() == classe;
+   };
+
     public static void main(String[] args) {
         ArrayList<Pessoa> pessoas = new ArrayList<>();
 
@@ -28,6 +33,9 @@ public class Main {
         pessoas.add(funcionario);
         //System.out.println(funcionario.getNome());
 
+        //Estagiario
+        Estagiario estagiario= new Estagiario("Borregar", 50, "1235", "Desivolvimento de sistema", 1000f);
+        pessoas.add(estagiario);
 
 
        /* Aluno a = (Aluno) pessoas.getFirst();
@@ -39,13 +47,30 @@ public class Main {
             System.out.println(p.getId());
             System.out.println(p.getSenha());
 
-            if (p instanceof Funcionario) {
+            if (testarClasseExata(pessoas,Aluno.class)){
+                Aluno a = (Aluno) p;
+                System.out.println("Curso: "+ a.getCurso());
+            } else if (testarClasseExata(pessoas,Professor.class)) {
+                Professor pr = (Professor) p;
+                System.out.println("Area: " + pr.getArea());
+            } else if (testarClasseExata(pessoas,Funcionario.class)) {
+                Funcionario f =(Funcionario) p;
+                System.out.println("Manutenção funcionario:"+f.getCetor());
+            } else if (testarClasseExata(pessoas,Estagiario.class)) {
+                Estagiario e = (Estagiario) p;
+                System.out.println("Curso" + e.getCurso());
+                System.out.println("Bolsa: R$ " + e.getBolsa() );
+            }
+
+
+
+          /*  if (p instanceof Funcionario) {
                 Funcionario f = (Funcionario) p;
                 System.out.println(f.getCetor());
             } else if (p.getClass() == Professor.class) {
                 Professor profe = (Professor) p;
                 System.out.println(profe.getArea());
-            }
+            }*/
 
 
 
