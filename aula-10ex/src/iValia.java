@@ -40,7 +40,7 @@ public class iValia  extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 String nome = txtestabe.getText();
                 String itens = txtitens.getText();
-                int notas = int.parseFloat(txtnotas.getText());
+                int notas = Integer.parseInt(txtnotas.getText());
                 String comentario = txtcomentario.getText();
 
                 Avaliacao novaProducao = new Avaliacao(nome, itens, notas, comentario);
@@ -48,7 +48,7 @@ public class iValia  extends JFrame {
                 JOptionPane.showMessageDialog(null,
                         "Produto: " + txtestabe.getText() +
                                 "\nitens:" + txtitens.getText() +
-                                "\nnotas:" + txtnotas.getText()); +
+                                "\nnotas:" + txtnotas.getText() +
                         "\ncomentarios:" + txtcomentario.getText());
                 txtNome.setText("");
                 txtValor.setText("");
