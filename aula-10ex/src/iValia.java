@@ -26,6 +26,37 @@ public class iValia extends JFrame {
                     e.getEstabelecimento(), e.getItens(), e.getNota(), e.getComentario());
         }
         txttexto.setText(s);//mostra no espaçp em branco
+    }
+        //boatao mostrar tudo
+
+    public iValia() {
+
+        Avaliacao Forno = new Avaliacao("Forno", "Pizza", 1, "Não vale a pena");
+        Avaliacao VilaAcoriana = new Avaliacao("Vila Açoriana", "Pizza", 9,"Muito boa");
+        Avaliacao MS_Salgado = new Avaliacao("Ms Salgado", "Salgado", 9,"Muito bom");
+        Avaliacao PizzaDobro = new Avaliacao("Pizza em dobro", "Pizza", 9,"satisfátoria");
+        alzheimer.add(Forno);
+
+        //botãoto fakes
+     lblFake.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            alzheimer.add(VilaAcoriana);
+            alzheimer.add(MS_Salgado);
+            alzheimer.add(PizzaDobro);
+            mostrarTudo();
+        }
+    });
+    //boãoto fakes
+
+
+//boatao mostrar tudo
+        lblMostrar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                mostrarTudo();
+            }
+        });
         //boatao mostrar tudo
 
         //boatao guardar
@@ -34,8 +65,19 @@ public class iValia extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 String nome = txtestabe.getText();
                 String itens = txtitens.getText();
-                int notas = Integer.parseInt(txtnotas.getText());
+                String notasText = txtnotas.getText();
                 String comentario = txtcomentario.getText();
+
+                int notas = 0;
+                try {
+                    notas = Integer.parseInt(notasText);
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null,
+                            "Por favor, insira um número válido para as notas.",
+                            "Erro de Formato de Número",
+                            JOptionPane.ERROR_MESSAGE);
+                    return; // Saia do método se a entrada for inválida
+                }
 
                 Avaliacao novaProducao = new Avaliacao(nome, itens, notas, comentario);
                 alzheimer.add(novaProducao);
@@ -80,64 +122,35 @@ public class iValia extends JFrame {
 
 
         //botao buscar item
-    lblBuscarItem.addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            // Obter o nome a ser localizado
-            String nomeItem = JOptionPane.showInputDialog("Digite o nome do Item:");
+        lblBuscarItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Obter o nome a ser localizado
+                String nomeItem = JOptionPane.showInputDialog("Digite o nome do Item:");
 
-            // Procurar o produto na lista de dadosProducao
-            for (Avaliacao produto : alzheimer) {
-                if (produto.getItens().equalsIgnoreCase(nomeItem)) {
-                    // Se o produto for encontrado, exibir seus dados
-                    JOptionPane.showMessageDialog(null,
-                            "Produto encontrado:\n" +
-                                    "Itens: " + produto.getItens() + "\n" +
-                                    "Nome: " + produto.getEstabelecimento() + "\n" +
-                                    "Nota: " + produto.getNota());
-                    return; // Encerrar a busca após encontrar o produto
+                // Procurar o produto na lista de dadosProducao
+                for (Avaliacao produto : alzheimer) {
+                    if (produto.getItens().equalsIgnoreCase(nomeItem)) {
+                        // Se o produto for encontrado, exibir seus dados
+                        JOptionPane.showMessageDialog(null,
+                                "Produto encontrado:\n" +
+                                        "Itens: " + produto.getItens() + "\n" +
+                                        "Nome: " + produto.getEstabelecimento() + "\n" +
+                                        "Nota: " + produto.getNota());
+                        return; // Encerrar a busca após encontrar o produto
+                    }
                 }
-            }
 
-            // Se o produto não for encontrado, exibir uma mensagem de erro
-            JOptionPane.showMessageDialog(null, "Produto não encontrado.");
-        }
-    });
+                // Se o produto não for encontrado, exibir uma mensagem de erro
+                JOptionPane.showMessageDialog(null, "Produto não encontrado.");
+            }
+        });
 
         //botao buscar item
 
 
-    }
-
-    public iValia() {
-
-        Avaliacao Forno = new Avaliacao("Forno", "Pizza", 1, "Não vale a pena");
-        Avaliacao VilaAcoriana = new Avaliacao("Vila Açoriana", "Pizza", 9,"Muito boa");
-        Avaliacao MS_Salgado = new Avaliacao("Ms Salgado", "Salgado", 9,"Muito bom");
-        Avaliacao PizzaDobro = new Avaliacao("Pizza em dobro", "Pizza", 9,"satisfátoria");
-        alzheimer.add(Forno);
-
-        //botãoto fakes
-     lblFake.addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            alzheimer.add(VilaAcoriana);
-            alzheimer.add(MS_Salgado);
-            alzheimer.add(PizzaDobro);
-            mostrarTudo();
-        }
-    });
-    //boãoto fakes
 
 
-//boatao mostrar tudo
-        lblMostrar.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                mostrarTudo();
-            }
-        });
-        //boatao mostrar tudo
 
 
     }

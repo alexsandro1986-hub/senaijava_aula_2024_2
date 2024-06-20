@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.util.ArrayList;
 
-public class Loja  extends JFrame{
+public class Loja  extends JFrame {
     private ArrayList<Pedido> sequencia = new ArrayList();
     private JButton btnjunior;
     private JButton btnPleno;
@@ -10,13 +10,29 @@ public class Loja  extends JFrame{
     private JButton btnLivro;
     private JButton btnMilk;
     private JTextField pedidoa;
-    private JPanel txttexto;
+    private JTextArea txttexto;
 
+    /*  if (p instanceof Funcionario) {
+              Funcionario f = (Funcionario) p;
+              System.out.println(f.getCetor());
+          } else if (p.getClass() == Professor.class) {
+              Professor profe = (Professor) p;
+              System.out.println(profe.getArea());
+          }*/
     private void mostrarTudo() {
         String s = "";
         for (Pedido e : sequencia) {
-            s += String.format("Estabelecimento: %s \nItens: %s \nNota: %d \nComentario: %s\n---------\n",
-                    e.getId(), e.getNumero(), e.getNumero(), e.getSabor(), e.getTamanho());
+            if (e instanceof livro ){
+                livro l = (livro) e;
+                
+                s += String.format("Estabelecimento: %s \nItens: %s \nNota: %d \nComentario: %s\n---------\n",
+                        e.getId(), e.getNumero(),l.getNome());
+            } else if (e instanceof Milkshake) {
+                Milkshake m = (Milkshake) e;
+                s += String.format("Estabelecimento: %s \nItens: %s \nNota: %d \nComentario: %s\n---------\n",
+                        e.getId(), e.getNumero(),m.getSabor(),m.getTamanho());
+            }
+
         }
         txttexto.setText(s);
 
@@ -35,6 +51,7 @@ public class Loja  extends JFrame{
     }*/
 
 
+    }
 }
 
 
